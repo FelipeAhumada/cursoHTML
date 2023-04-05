@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Curriculum de Batman</title>
+    <style>
+
+      /* Estilos CSS para la página */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem; /* 1em 12puntos , 2em 4puntos, 1.5em ?  */
+
+      }
+      header {
+        background-color: #222;
+        color: #fff;
+        padding: 10px;
+      }
+      h1 {
+        margin: 0;
+        text-decoration: underline;
+        color: greenyellow;
+      }
+      nav {
+        background-color: #444;
+        color: #fff;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+      }
+      a:hover {
+        color: #f80;
+      }
+      h1, .item, #este {
+        font-weight: bold;
+        color: green;
+      }
+      section {
+        margin: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 18px;
+        margin-top: 0;
+        background-color: rgb(220, 210, 240, 0.5);
+      }
+      /* Estilos CSS para la lista de navegación */
+      .listado {
+        margin-left: 20px;
+      }
+      /* Estilos CSS por ID */
+      #perfil {
+        background-color: pink;
+        padding: 10px;
+      }
+    </style>
+<script>
+  // Seleccionar la etiqueta a
+  //const botonMostrarOcultar = document.getElementById("experiencia");
+  /*
+  // Agregar un controlador de eventos de clic
+  botonMostrarOcultar.addEventListener("click", function() {
+    // Seleccionar las etiquetas section
+    const seccionOculta = document.getElementById("educacion");
+    const educacion = document.getElementById("experiencia");
+    
+    // Alternar la propiedad "display" de las etiquetas section
+    if (seccionOculta.style.display === "none") {
+      seccionOculta.style.display = "block";
+      educacion.style.display = "none";
+    } else {
+      seccionOculta.style.display = "none";
+      educacion.style.display = "block";
+    }
+  });*/
+
+  function mostrarOcultar() {
+    // Seleccionar las etiquetas section
+    const seccionOculta = document.getElementById("experiencia");
+    const seccionMostrar = document.getElementById("educacion");
+    
+    // Alternar la propiedad "display" de las etiquetas section
+    if (seccionOculta.style.display === "none") {
+      seccionOculta.style.display = "block";
+      seccionMostrar.style.display = "none";
+    } else {
+      seccionOculta.style.display = "none";
+      seccionMostrar.style.display = "block";
+    }
+  }
+
+
+</script>
+  </head>
+  <body>
+    <header>
+      <h1>Curriculum de Batman</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#educacion" onclick="mostrarOcultar()">Educacion</a></li>
+        <li><a href="#experiencia" onclick="mostrarOcultar()">Experiencia</a></li>
+        <li><a href="#habilidades" >Habilidades</a></li>
+      </ul>
+    </nav>
+    <section id="educacion" style="display: none;">
+      <h2>Educación</h2>
+      <ul>
+        <li>
+          <h3>Universidad de Princeton</h3>
+          <p>Grado: Licenciatura en Ciencias Políticas</p>
+          <p>Periodo: 1998 - 2002</p>
+        </li>
+        <li>
+          <h3>Universidad de Nanda Parbat</h3>
+          <p>Grado: Entrenamiento en artes marciales</p>
+          <p>Periodo: 2003 - 2005</p>
+        </li>
+      </ul>
+    </section>
+    <section id="experiencia" style="display: block;">
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=XMjB2jjfw8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </section>
+    
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Lucha cuerpo a cuerpo</li>
+        <li>Uso de armas no letales</li>
+        <li>Infiltración</li>
+        <li>Inteligencia</li>
+      </ul>
+    </section>
+    <footer>
+      <address>
+      <p>Este curriculum fue creado por Batman</p>
+      <p>Datos de contacto:</p>
+      <ul>
+        <li>
+          <h3>Batman Inc.</h3>
+          <p>Email: <strong><a href="mailto:contacto@wayne.corp"> contacto@wayne.corp</a></strong></p>
+          <p>Celular: <a href="tel:9999999999">+56 9 99999999</a></p>
+          <p>Dirección: Chicago Board of Trade Este</p>
+        </li>
+      </ul>
+      </address>
+    </footer>
+  </body>
+</html>
