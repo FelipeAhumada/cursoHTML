@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos JavaScript</title>
+</head>
+
+<body>
+  <h1>Fundamentos JavaScript</h1>
+  <script>
+    /* **********     Curso JavaScript: Variables: var 🥊VS🥊 let - ********** */
+    //Variables String
+    let hello = "Hello World";
+    //Variables Number
+    let numero2 = 20;
+    //Variables Boolean
+    var verdadero = true;
+    let falso = false;
+
+  
+    //Variables Funciones
+    var nombre = function () {
+      return "Juan";
+    };
+    
+    //Constante
+    const PI = 3.1416;
+
+    //Variables undifined
+    let profesion;
+    console.log(profesion);
+
+    //Variables null
+    let edad = null;
+    console.log(edad);
+
+    //Varible del typo Symbol
+    let simbolo = Symbol("mi simbolo");
+
+      //Variables Array
+    var colores = ["Rojo", "Azul", "Verde"];
+    let colores2 = ["Amarillo", "Naranja", "Morado"];
+
+    //Variables Objetos
+    var persona = {
+      nombre: "Juan",
+      apellido: "Perez",
+      telefono: "123456789"
+    };
+
+    var personaUndifined = {};
+    
+
+    console.log(persona.nombre);
+
+    let persona2 = {
+      nombre: "Carlos",
+      apellido: "Lopez",
+      telefono: "987654321"
+    };
+
+    console.log(hola);
+    console.log(hello);
+    console.log(window);
+    console.log(window.hola);
+    console.log(window.hello); 
+    
+    //Ambito de bloque
+
+    //Esto es un bloque - comentario de una lines
+    /*
+    Esto
+    es
+    un
+    comentario
+    de
+    varias
+    líneas */
+    console.log ("****************var*****************");
+    var musica = "Rock";
+    console.log("Variable Música antes del Bloque", musica);
+    {
+      var musica = "Pop";
+      console.log("Variable Música dentro del Bloque", musica);
+    }
+    console.log("Variable Música después del Bloque", musica);
+    console.log("****************let*****************");
+    let musica2 = "Rock";
+    console.log("Variable Música antes del Bloque", musica2);
+    {
+      let musica2 = "Pop";
+      console.log("Variable Música dentro del Bloque", musica2);
+    }
+    console.log("Variable Música después del Bloque", musica2);
+
+</script>
+</body>
+</html>
